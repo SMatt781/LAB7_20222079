@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%-20thread] %-5level %-40logger{39} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Pekko logs -->
+    <logger name="org.apache.pekko" level="INFO"/>
+    <logger name="org.apache.pekko.remote" level="INFO"/>
+    <logger name="org.apache.pekko.cluster" level="INFO"/>
+
+    <!-- Nuestros logs -->
+    <logger name="com.example.sdn" level="DEBUG"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

@@ -1,0 +1,75 @@
+version: '3.9'
+
+services:
+  # CONTROLADOR SDN (Seed Node del cluster Pekko)
+  controller:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sdn-controller
+    hostname: controller
+    ports:
+      - "2551:2551"
+    environment:
+      # El nombre del contenedor es "controller"
+      HOSTNAME: controller
+    networks:
+      - sdn-network
+    # Los logs de la consola se ven con: docker-compose logs -f controller
+    stdin_open: true
+    tty: true
+
+  # SWITCH-1 (se une al cluster automáticamente)
+
+  switch-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sdn-switch-1
+    hostname: switch-1
+    environment:
+      HOSTNAME: switch-1
+      SWITCH_ID: switch-1
+      # Punto de entrada: ejecutar SwitchMain en lugar de ControllerMain
+      ENTRYPOINT_CLASS: com.example.sdn.SwitchMain
+    networks:
+      - sdn-network
+    depends_on:
+      - controller
+    # Esperar a que el controlador esté listo
+    entrypoint: [
+      "sh", "-c",
+      "sleep 5 && exec java -cp app.jar com.example.sdn.SwitchMain"
+    ]
+    stdin_open: true
+    tty: true
+
+  # SWITCH-2 (se une al cluster automáticamente)
+
+  switch-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sdn-switch-2
+    hostname: switch-2
+    environment:
+      HOSTNAME: switch-2
+      SWITCH_ID: switch-2
+      ENTRYPOINT_CLASS: com.example.sdn.SwitchMain
+    networks:
+      - sdn-network
+    depends_on:
+      - controller
+    entrypoint: [
+      "sh", "-c",
+      "sleep 6 && exec java -cp app.jar com.example.sdn.SwitchMain"
+    ]
+    stdin_open: true
+    tty: true
+
+# Red Docker interna
+# Los contenedores se comunican por nombre: "controller", "switch-1", etc.
+
+networks:
+  sdn-network:
+    driver: bridge

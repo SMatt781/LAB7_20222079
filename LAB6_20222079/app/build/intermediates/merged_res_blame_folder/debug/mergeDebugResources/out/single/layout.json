@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.practica3_lab6_iot.app-mergeDebugResources-48:/layout/item_sesion.xml",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/item_sesion.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-mergeDebugResources-48:/layout/activity_dashboard.xml",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-mergeDebugResources-48:/layout/activity_main.xml",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-mergeDebugResources-48:/layout/activity_graficos.xml",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_graficos.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-mergeDebugResources-48:/layout/custom_login.xml",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/custom_login.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-mergeDebugResources-48:/layout/activity_formulario.xml",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_formulario.xml"
+    }
+]

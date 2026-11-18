@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo_actividad_options">
+        <item>Teoría</item>
+        <item>Práctica</item>
+        <item>Laboratorio</item>
+    </string-array>
+</resources>

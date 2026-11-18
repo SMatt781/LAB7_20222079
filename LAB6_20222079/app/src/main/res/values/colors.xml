@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1E3A8A</color>
+    <color name="primary_dark">#172554</color>
+    <color name="accent">#2563EB</color>
+    <color name="surface_bg">#F8FAFC</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="danger">#DC2626</color>
+
+    <color name="chip_lab_bg">#D1FAE5</color>
+    <color name="chip_lab_text">#065F46</color>
+    <color name="chip_teoria_bg">#DBEAFE</color>
+    <color name="chip_teoria_text">#1E40AF</color>
+    <color name="chip_practica_bg">#FEF3C7</color>
+    <color name="chip_practica_text">#92400E</color>
+</resources>

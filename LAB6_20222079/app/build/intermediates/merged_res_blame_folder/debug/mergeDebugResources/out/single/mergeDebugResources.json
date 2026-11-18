@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/drawable_ic_edit.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/layout_activity_main.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/drawable_ic_logo_estudio.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/drawable/ic_logo_estudio.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/drawable_ic_delete.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/drawable_ic_logout.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/layout_custom_login.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/custom_login.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/layout_activity_graficos.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_graficos.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/layout_activity_formulario.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_formulario.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/drawable_ic_chart.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/drawable/ic_chart.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/drawable_bg_chip.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.example.practica3_lab6_iot.app-debug-49:/layout_item_sesion.xml.flat",
+        "source": "com.example.practica3_lab6_iot.app-main-51:/layout/item_sesion.xml"
+    }
+]
